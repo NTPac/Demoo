@@ -9,14 +9,18 @@ import dmk from './FormDoiMK';
  function Profile({ navigation }) {
   return (
       <View StyleSheet={styles.container}>
+        <View>
           <Image StyleSheet={styles.image} source={require('./assets/girl1.jpg')}/>        
           <Text StyleSheet={styles.Label}><b>Nguyen Van A</b></Text>
+        </View>
+        <View> 
           <Text>Ma sinh vien: 4051051110</Text>
           <Text>ma khau: *******</Text>
           <Button
         title="Đổi mật khẩu"
         onPress={() => navigation.navigate('ChangePassword')}
       />
+        </View> 
       </View>
   )
 }
@@ -47,7 +51,6 @@ const styles = StyleSheet.create({
   image:{
     width:200, 
     height:200,
-    marginBottom:20,
     borderTopLeftRadius:100,
     borderTopRightRadius:100,
     borderBottomLeftRadius:100,
