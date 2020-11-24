@@ -2,14 +2,14 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { StyleSheet, Text, View, Image, Linking } from 'react-native';
+import { StyleSheet, Text, View, Image, Button} from 'react-native';
 import dmk from './FormDoiMK';
 
 
  function Profile({ navigation }) {
   return (
       <View StyleSheet={styles.container}>
-          <Image StyleSheet={styles.image} source={require('./asset/girl1.jpg')}></Image>        
+          <Image StyleSheet={styles.image} source={require('./assets/girl1.jpg')}/>        
           <Text StyleSheet={styles.Label}><b>Nguyen Van A</b></Text>
           <Text>Ma sinh vien: 4051051110</Text>
           <Text>ma khau: *******</Text>
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius:100,
     borderBottomLeftRadius:100,
     borderBottomRightRadius:100,
-  }
+  },
 
   Label: {
     fontSize: 24,
