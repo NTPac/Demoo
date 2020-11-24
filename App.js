@@ -14,7 +14,7 @@ import dmk from './FormDoiMK';
           <Text>Ma sinh vien: 4051051110</Text>
           <Text>ma khau: *******</Text>
           <Button
-        title="Go to Details"
+        title="Đổi mật khẩu"
         onPress={() => navigation.navigate('ChangePassword')}
       />
       </View>
