@@ -15,6 +15,7 @@ export default class login extends React.Component {
               if(passwordNew == passwordNewConfirm){
                 console.log("Đang đổi mật khẩu với mật khẩu mới là:" + passwordNew + passwordNewConfirm);   
                 Alert.alert("Đổi mật khẩu thành công");
+                this.props.navigation.navigate("profile");
             }
           } else {
               Alert.alert("mật khẩu không chính xác");
