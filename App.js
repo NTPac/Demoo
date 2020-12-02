@@ -3,8 +3,8 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import dmk from './FormDoiMK';
-import profile from "./profile";
+import dmk from './screens/FormDoiMK';
+import profile from "./screens/profile";
 
 const Stack = createStackNavigator();
 
